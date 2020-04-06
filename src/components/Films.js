@@ -1,6 +1,7 @@
 import React from 'react'
 import  Films  from './Films'
 import PropTypes from 'prop-types';
+import {films} from './components/data'
 
 export default function Films({ list }) {
   const films = list.map(film => <Film key={film.id} info={film} />);
