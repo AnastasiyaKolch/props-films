@@ -8,6 +8,7 @@ import Stars from './Stars';
 import PropTypes from 'prop-types'
 
 
+
 export default function Film({ info }) {
 
   return (
@@ -36,5 +37,5 @@ export default function Film({ info }) {
 }
 
 Film.propTypes = {
-  info: PropTypes.array.isRequired
+  info: PropTypes.instanceOf(Film).isRequired
 }
